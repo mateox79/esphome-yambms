@@ -283,8 +283,8 @@ sensor:
       id: bms${bms_id}_total_voltage
       name: "${name} ${bms_name} battery voltage"
     battery_current:
-      id: bms${bms_id}_current
-      name: "${name} ${bms_name} battery current"
+      id: bms${bms_id}_current_real
+      name: "${name} ${bms_name} battery current real"
     battery_power:
       id: bms${bms_id}_power
       name: "${name} ${bms_name} battery power"
@@ -368,7 +368,11 @@ sensor:
       name: "${name} ${bms_name} cell undervoltage protection release time"
     cell_overvoltage_protection_release_time:
       name: "${name} ${bms_name} cell overvoltage protection release time"
-
+sensor:
+  - platform: homeassistant
+    id: bms${bms_id}_current
+    name: "${name} ${bms_name} battery current (Deye)"
+    entity_id: sensor.battery_current_invertido     
 text_sensor:
   - platform: jk_rs485_bms
     jk_rs485_bms_id: jk_rs485_bms${bms_id}
