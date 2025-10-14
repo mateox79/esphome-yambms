@@ -368,7 +368,7 @@ sensor:
       name: "${name} ${bms_name} cell undervoltage protection release time"
     cell_overvoltage_protection_release_time:
       name: "${name} ${bms_name} cell overvoltage protection release time"
-sensor:
+
   - platform: homeassistant
     id: bms${bms_id}_current
     name: "${name} ${bms_name} battery current (Deye)"
