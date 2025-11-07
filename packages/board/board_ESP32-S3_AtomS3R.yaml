@@ -125,16 +125,7 @@ output:
   - platform: lp5562
     id: white
     channel: 3
-     # Backlight Control Platform
-  - platform: lp5562
-    id: backlight
-    output: backlight_out
-    name: "${name} ${board_name} Backlight control"
-    # web_server:
-      # sorting_weight:  ${web_server_sorting_group}00
-      # sorting_group_id: group_${web_server_sorting_group}
-    restore_mode: RESTORE_DEFAULT_ON
-    icon: mdi:brightness-6
+
     
   # Inverter Heartbeat Output (ESP32 board without LED)
   - platform: template
@@ -180,3 +171,11 @@ display:
     update_interval: ${display_update_interval}
     data_rate: 40Mhz
     rotation: ${display_rotation}
+
+       # Backlight Control Platform
+switch:
+  - platform: output
+    name: "Pantalla Atom S3R"
+    id: backlight_switch
+    output: white
+    restore_mode: ALWAYS_ON  # o RESTORE_DEFAULT_ON si prefieres
