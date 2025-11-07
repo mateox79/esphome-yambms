@@ -126,7 +126,7 @@ output:
     id: white
     channel: 3
      # Backlight Control Platform
-  - platform: speed
+  - platform: lp5562
     id: backlight
     output: backlight_out
     name: "${name} ${board_name} Backlight control"
