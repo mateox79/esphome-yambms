@@ -150,8 +150,15 @@ binary_sensor:
     on_press:
       then:
         - logger.log: Button Pressed
-        - display.page.show_next: my_display
-        #- display.page.show_previous: my_display
+        - if:
+        condition:
+          switch.is_on: backlight_switch
+        then:
+          - switch.turn_off: backlight_switch
+        else:
+          - switch.turn_on: backlight_switch
+     #   - display.page.show_next: my_display
+     
 
 display:
   # Atom S3R display
