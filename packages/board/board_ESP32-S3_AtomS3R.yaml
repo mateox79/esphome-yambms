@@ -151,12 +151,12 @@ binary_sensor:
       then:
         - logger.log: Button Pressed
         - if:
-        condition:
-          switch.is_on: backlight_switch
-        then:
-          - switch.turn_off: backlight_switch
-        else:
-          - switch.turn_on: backlight_switch
+            condition:
+              switch.is_on: backlight_switch
+            then:
+              - switch.turn_off: backlight_switch
+            else:
+              - switch.turn_on: backlight_switch
      #   - display.page.show_next: my_display
      
 
