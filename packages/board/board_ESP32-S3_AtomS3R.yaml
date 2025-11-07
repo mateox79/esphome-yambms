@@ -169,3 +169,14 @@ display:
     update_interval: ${display_update_interval}
     data_rate: 40Mhz
     rotation: ${display_rotation}
+
+ # Backlight Control Platform
+  - platform: speed
+    id: backlight
+    output: backlight_out
+    name: "${name} ${board_name} Backlight control"
+    # web_server:
+      # sorting_weight:  ${web_server_sorting_group}00
+      # sorting_group_id: group_${web_server_sorting_group}
+    restore_mode: RESTORE_DEFAULT_ON
+    icon: mdi:brightness-6
