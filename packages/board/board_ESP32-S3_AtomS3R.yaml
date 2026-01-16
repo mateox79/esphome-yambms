@@ -154,8 +154,14 @@ binary_sensor:
     on_press:
       then:
         - logger.log: Button Pressed
-        - display.page.show_next: my_display
-        #- display.page.show_previous: my_display
+        - if:
+            condition:
+              switch.is_on: backlight_switch
+            then:
+              - switch.turn_off: backlight_switch
+            else:
+              - switch.turn_on: backlight_switch
+     #   - display.page.show_next: my_display
 
 display:
   # Atom S3R display
@@ -175,3 +181,11 @@ display:
     update_interval: ${display_update_interval}
     data_rate: 40Mhz
     rotation: ${display_rotation}
+
+         # Backlight Control Platform
+switch:
+  - platform: output
+    name: "Pantalla Atom S3R"
+    id: backlight_switch
+    output: white
+    restore_mode: ALWAYS_ON  # o RESTORE_DEFAULT_ON si prefieres  
