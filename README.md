@@ -7,10 +7,9 @@
 ![GitHub watchers](https://img.shields.io/github/watchers/Sleeper85/esphome-yambms)
 [!["Buy Me A Coffee"](https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg)](https://www.buymeacoffee.com/sleeper85)
 
-> [!WARNING]  
-> I'm currently working on releasing **YamBMS 1.6.0**, which will be compatible with **ESPHome >= 2025.11**.
-> **ESPHome 2025.11.0** introduces many changes and still contains many bugs.
-> For the time being, I advise you to stay with **ESPHome 2025.10.5**.
+> [!TIP]
+> This page contains many links to other README.
+> If you don't find answers to your questions, [you'll find all the README in this folder](documents/README).
 
 > [!TIP]
 > Not sure which YAML to choose ? ... [YamBMS_Remote_Packages_example.yaml](YamBMS_Remote_Packages_example.yaml)
@@ -164,8 +163,9 @@ for statistics collection. Only [@Sleeper85](https://github.com/Sleeper85) have 
 
 ## References
 
-* Thanks to [@syssi](https://github.com/syssi/) for help and making many BMS components (JK, JBD, Seplos, Pace, etc.)
-* Thanks to [@txubelaxu](https://github.com/txubelaxu/) for help and making the `JK_RS485` component.
+* Thanks to [@syssi](https://github.com/syssi/) for help and developing many BMS components (JK, JBD, Seplos, Pace, etc.).
+* Thanks to [@txubelaxu](https://github.com/txubelaxu/) for help and developing the `JK_RS485` component.
 * Thanks to [@shvm](https://github.com/shvmm), [@MrPabloUK](https://github.com/MrPabloUK) and [@GHswitt](https://github.com/GHswitt) for their multiple contributions.
-* Thanks to [@uksa007](https://www.patreon.com/Uksa007Codedevelopment) for making the first CANBUS code.
+* Thanks to [@Fahmula](https://github.com/Fahmula) for developing the `PYLON RS485` component.
+* Thanks to [@uksa007](https://www.patreon.com/Uksa007Codedevelopment) for the development of the first CANBUS code.
 * Thanks to all the [contributors](https://github.com/Sleeper85/esphome-yambms/graphs/contributors).
