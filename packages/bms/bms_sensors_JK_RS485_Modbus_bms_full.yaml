@@ -554,11 +554,6 @@ text_sensor:
     info_device_setup_passcode:
       device_id: bms_${bms_id}
       name: "info device setup passcode"
-button:
-  - platform: jk_rs485_bms
-    jk_rs485_bms_id: jk_rs485_bms${bms_id}
-    force_soc_reset:
-      name: "${name} force soc reset"
 number:
   - platform: jk_rs485_bms
     jk_rs485_bms_id: jk_rs485_bms${bms_id}
