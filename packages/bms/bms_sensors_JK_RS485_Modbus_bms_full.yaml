@@ -592,7 +592,7 @@ number:
     cell_balancing_trigger_voltage:
       id: bms${bms_id}_bms_balance_trigger_voltage
       device_id: bms_${bms_id}
-      # name: "cell balancing trigger voltage"
+      name: "cell balancing trigger voltage"
     cell_balancing_starting_voltage:
       device_id: bms_${bms_id}
       name: "cell balancing starting voltage"
